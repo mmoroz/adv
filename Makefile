@@ -19,6 +19,7 @@ assets-watch:
 assets-dev:
 	docker exec app_node_1 yarn run dev
 
-# perm:
-# 	sudo chown ${USER}:${USER} bootstrap/cache -R
-# 	sudo chown ${USER}:${USER} storage -R
+perm:
+	sudo chown ${USER}:${USER} bootstrap/cache -R
+	sudo chown ${USER}:${USER} storage -R
+	sudo chmod -R 777 storage
